@@ -1,0 +1,19 @@
+{
+  "name": "Eat Time Landing Page",
+  "version": "1.0.0",
+  "description": "This is the landing page for Eat Time",
+  "scripts":{
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type": "git",
+    "url": "git+https://github.com/wecarrasco/EatTimeLandingPage.git"
+  },
+  "keywords":[
+    "Eat Time",
+    "Food"
+  ],
+  "author": "Walther Carrasco",
+  "bugs": "https://github.com/wecarrasco/EatTimeLandingPage/issues",
+  "homepage": "https://github.com/wecarrasco/EatTimeLandingPage"
+}
