@@ -1,7 +1,11 @@
-#Eat Time
+# Eat Time
+
 This is the landing page for Eat Time
 
-##Setup
+## Setup
+
 npm install
+
 npm run build
+
 npm start
