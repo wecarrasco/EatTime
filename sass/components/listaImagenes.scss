@@ -1,0 +1,39 @@
+.story__shapes{
+  width: 10rem;
+  height: 10rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+
+  transform: translateX(-3rem);
+  position: relative;
+
+  border-radius: 50%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: inline-block;
+
+}
+
+.story__imag{
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all .5s;
+  background-color: black;
+}
+
+.section-intro--imagenes{
+  position: relative;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 25%;
+  margin: 5rem 0;
+  box-sizing: content-box
+  // background-color: black;
+  // top:50%;
+  // left:50%;
+  // transform: translate(-50%, -50%);
+}

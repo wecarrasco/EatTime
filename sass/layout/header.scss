@@ -1,0 +1,35 @@
+.header{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,rgba($color-grey-light-2, 0.9),rgba(#D85503, 0.3)),url("../../img/pizza.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__logo{
+    height: 250px;
+  }
+
+  &__text-box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__search{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+  }
+}

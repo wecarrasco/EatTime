@@ -1,19 +1,22 @@
 {
-  "name": "Eat Time Landing Page",
+  "name": "eattimelandingpage",
   "version": "1.0.0",
   "description": "This is the landing page for Eat Time",
-  "scripts":{
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/wecarrasco/EatTimeLandingPage.git"
   },
-  "keywords":[
+  "keywords": [
     "Eat Time",
     "Food"
   ],
   "author": "Walther Carrasco",
   "bugs": "https://github.com/wecarrasco/EatTimeLandingPage/issues",
-  "homepage": "https://github.com/wecarrasco/EatTimeLandingPage"
+  "homepage": "https://github.com/wecarrasco/EatTimeLandingPage",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
 }

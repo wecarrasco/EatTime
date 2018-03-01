@@ -1,0 +1,37 @@
+.navigation{
+  position: fixed;
+  background-color: $color-grey-light-2;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: #D85503 2px solid;
+  background-image: url('../../img/logo.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  z-index: 1000;
+
+  &__list{
+    margin-top: 0px;
+    display: inline-block;
+
+  }
+
+  &__item{
+    display: inline-block;
+    color: #D04646;
+    padding: 13px;
+    transition: 200ms all linear;
+    font-size: 2rem;
+
+    &:hover{
+      background: #D85503;
+      padding: 6px;
+      margin: 7px 14px;
+      transform: rotate(-4deg);
+      color: $color-grey-light-2;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+  }
+}

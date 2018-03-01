@@ -1,0 +1,118 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-gray-dark;
+
+
+  box-sizing: border-box;
+}
+
+.heading-primary{
+  color: $color-black;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+
+  backface-visibility: hidden;
+
+
+
+  &--main{
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    };
+  }
+
+  &--sub{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+
+    animation: moveInRight 1s ease-out;
+
+    @include respond(phone){
+      letter-spacing: .5rem;
+    };
+  }
+}
+
+.heading-secondary{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display:inline-block;
+  background-image: linear-gradient(to right bottom,rgba(#D85503, 0.6),rgba(#72040D, 0.7));
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+
+  @include respond(tab-port){
+    font-size: 3rem;
+  };
+  @include respond(phone){
+    font-size: 2.5rem;
+  };
+
+  &:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-nosotros{
+  background-image: linear-gradient(to right bottom,rgba(#000000, 0.6),rgba(#000000, 0.7));
+  width: 100%;
+}
+
+.heading-tertiary{
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: $default-font-size;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
+
+.section-intro{
+
+
+  &--title{
+    width: 35%;
+    margin: 0 auto;
+    @include respond(tab-port){
+      width: 30%;
+    };
+  }
+
+  &--cuerpo{
+    text-align: center;
+  }
+}
+
+.section-nosotros{
+
+  &--title{
+    width: 35%;
+    margin: -10rem auto 4rem auto;
+    @include respond(tab-port){
+      width: 30%;
+    };
+  }
+}
